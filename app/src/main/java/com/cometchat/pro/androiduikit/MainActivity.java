@@ -150,7 +150,7 @@ public class MainActivity extends AppCompatActivity {
             logUser();
         });
         findViewById(R.id.reg_link).setOnClickListener((e)->{
-            Log.e("DIE", "sucks");
+
             logInFr.setVisibility(View.INVISIBLE);
             LoadRegFragm();
         });
@@ -339,14 +339,6 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-
- /*   @Override
-    public void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == RESULT_LOAD_IMAGE && resultCode == RESULT_OK && null != data) {
-
-        }
-    }*/
     @Override
     public void onBackPressed() {
         super.onBackPressed();

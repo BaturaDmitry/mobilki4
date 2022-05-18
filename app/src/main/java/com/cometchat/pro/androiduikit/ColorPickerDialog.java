@@ -40,8 +40,6 @@ public class ColorPickerDialog extends Dialog {
             mListener = l;
             mDefaultColor = defaultColor;
 
-            // Get the current hue from the current color and update the main
-            // color field
             float[] hsv = new float[3];
             Color.colorToHSV(color, hsv);
             mCurrentHue = hsv[0];
@@ -49,40 +47,39 @@ public class ColorPickerDialog extends Dialog {
 
             mCurrentColor = color;
 
-            // Initialize the colors of the hue slider bar
             int index = 0;
             for (float i = 0; i < 256; i += 256 / 42) // Red (#f00) to pink
-            // (#f0f)
+
             {
                 mHueBarColors[index] = Color.rgb(255, 0, (int) i);
                 index++;
             }
             for (float i = 0; i < 256; i += 256 / 42) // Pink (#f0f) to blue
-            // (#00f)
+
             {
                 mHueBarColors[index] = Color.rgb(255 - (int) i, 0, 255);
                 index++;
             }
             for (float i = 0; i < 256; i += 256 / 42) // Blue (#00f) to light
-            // blue (#0ff)
+
             {
                 mHueBarColors[index] = Color.rgb(0, (int) i, 255);
                 index++;
             }
             for (float i = 0; i < 256; i += 256 / 42) // Light blue (#0ff) to
-            // green (#0f0)
+
             {
                 mHueBarColors[index] = Color.rgb(0, 255, 255 - (int) i);
                 index++;
             }
             for (float i = 0; i < 256; i += 256 / 42) // Green (#0f0) to yellow
-            // (#ff0)
+
             {
                 mHueBarColors[index] = Color.rgb((int) i, 255, 0);
                 index++;
             }
             for (float i = 0; i < 256; i += 256 / 42) // Yellow (#ff0) to red
-            // (#f00)
+
             {
                 mHueBarColors[index] = Color.rgb(255, 255 - (int) i, 0);
                 index++;

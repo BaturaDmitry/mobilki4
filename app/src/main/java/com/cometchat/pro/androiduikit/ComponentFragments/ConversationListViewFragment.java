@@ -48,7 +48,7 @@ public class ConversationListViewFragment extends Fragment {
         {
             @Override
             public void OnItemClick(Conversation conversation, int position) {
-                Log.e("DIE4", "sucks");
+
                 Intent intent = new Intent(getContext(), CometChatMessageListActivity.class);
                 intent.putExtra(UIKitConstants.IntentStrings.TYPE,conversation.getConversationType());
                 if (conversation.getConversationType().equals(CometChatConstants.CONVERSATION_TYPE_GROUP))

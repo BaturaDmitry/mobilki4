@@ -77,7 +77,6 @@ public class GroupListViewFragment extends Fragment {
             public void onError(CometChatException e) {
                 groupBinding.contactShimmer.stopShimmer();
                 groupBinding.contactShimmer.setVisibility(View.GONE);
-                Log.e( "onError: ",e.getMessage());
             }
         });
     }

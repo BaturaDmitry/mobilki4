@@ -24,7 +24,7 @@ public class StatusIndicatorFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+
         View view = inflater.inflate(R.layout.fragment_status_indicator, container, false);
         CometChatUserPresence statusIndicator = view.findViewById(R.id.statusIndicator);
         RadioGroup statusChangeGroup = view.findViewById(R.id.statusChange);

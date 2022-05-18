@@ -38,11 +38,15 @@
             android:layout_marginEnd="8dp"
             android:background="@drawable/cc_message_bubble_left"
             android:layout_marginStart="10dp">
+
             <include
-                android:layout_margin="8dp"
                 layout="@layout/message_left_reply_item"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp" />
             <RelativeLayout
                 android:layout_below="@+id/replyLayout"
                 android:backgroundTint="@color/red_600"
